@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:key="nombre"
+        android:dialogTitle="Escriba su nombre"
+        android:summary="Esta propiedad permite definir el nombre"
+        android:title="Nombre"
+        />
+    <ListPreference android:key="colores"
+        android:dialogTitle="Escriba su color favorito"
+        android:summary="Esta propiedad permite definir su color favorito"
+        android:title="Color"
+        android:entries="@array/listColorEntries"
+        android:entryValues="@array/listColorValues"
+        />
+</PreferenceScreen>

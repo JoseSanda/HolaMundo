@@ -42,6 +42,17 @@ public class MainActivity extends ActionBarActivity {
                 startActivityForResult(intent, REQUEST_CODE_CON_RESULTADO);
             }
         });
+
+        View botonImplicita = findViewById(R.id.btImplicita);
+        botonImplicita.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                //Ahora no sabemos que Activity nos abrira, ya que sera la que reponda a la intent IMPLICITA
+                Intent intent = new Intent("com.example.tarde.holamundo.IMPLICITA");
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
